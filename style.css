@@ -1,0 +1,15 @@
+p{
+	color : red;
+	}
+	
+	.parent{
+		font-size: 1em;
+		background: tomato;
+		width: 1000px
+	}
+	
+	.child{
+		font-size: 2rem;
+		background: yellow;
+		width: 50vw;
+	}
