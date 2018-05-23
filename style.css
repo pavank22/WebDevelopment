@@ -1,15 +1,122 @@
-p{
-	color : red;
-	}
+:root {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+	background:#F9E79F;
+}
+
+.container {
 	
-	.parent{
-		font-size: 1em;
-		background: tomato;
-		width: 1000px
-	}
-	
-	.child{
-		font-size: 2rem;
-		background: yellow;
-		width: 50vw;
-	}
+    display: flex;
+    flex-direction: column;
+    margin: 5vw;
+}
+
+.banner .card {
+    background: url(Pavan.jpg);
+    border: 1px solid #2c2c2c;
+    border-radius: 10px;
+    
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	display: flex;
+	height: 60vh;
+    flex-direction: column;
+}
+
+.banner .card .heading {
+    color: #D03FF4;
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1vh;
+    padding: 5vw;
+}
+
+.banner .card .sub-heading {
+    color: #D03FF4;
+    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+	margin: 0;
+    padding: 0 5vw 2vw;
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+	flex-wrap: wrap;
+    align-items: above;
+    margin-top: 5vh;
+}
+
+ .row .textarea{
+	 flex: 1;	 
+	 border-radius: 5px;	
+	 display: block;
+	 border-style: solid;
+	 border-color: black;
+	 border-width: 1px;
+	 color: #D03958;
+	 margin: 2px;
+ }
+ 
+
+ @media only screen and (min-width: 150px){
+    .hidden {
+        display: none;
+    }
+    
+ }	
+ @media only screen and (max-width: 420px) {
+	.banner .card .heading {
+    color: #FF5733;
+    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1vh;
+    padding: 5vw;
+}
+
+.banner .card .sub-heading {
+    color: #FF5733;
+    font-family: "Playfair Display", serif;
+    font-size: 1.0rem;
+    font-weight: 600;
+	margin: 0;
+    padding: 0 5vw 2vw;
+}
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
